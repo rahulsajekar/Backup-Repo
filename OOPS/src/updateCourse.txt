@@ -1,0 +1,15 @@
+// Rutuja Khumbhar
+int n=5;
+String courses[]=new String[n];
+Scanner sc=new Scanner(System.in);
+
+void updateCourses()
+    {
+        System.out.println("Enter the number of courses that you have did (atmost 5)");
+        n=sc.nextInt();
+        System.out.println("Enter courses:");
+        for(int i=0;i<n;i++)
+        {
+            courses[i]=sc.next();
+        }
+    }

@@ -1,0 +1,13 @@
+public void update_HigherStudies() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Are you going abroad for Higher Studies: 1 for yes and 2 for no");
+        int ans = sc.nextInt();
+        if (ans == 1) {
+            Scanner s=new Scanner(System.in);
+            System.out.println("Enter country name: ");
+            country = s.nextLine();
+            System.out.println("All the best future studies in: " + country);
+        } else {
+            System.out.println("All the best for future work");
+        }
+    }

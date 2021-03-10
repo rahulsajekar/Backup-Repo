@@ -1,0 +1,44 @@
+class PrintLargest {
+    static void ShowTopperNames(int arr[], int arr_size,String names[])
+    {
+        int i,first, second, third;
+        //String k;
+        String name = " ";
+
+        if (arr_size < 3) {
+            System.out.print(" Invalid Input ");
+            return;
+        }
+        third = first = second = Integer.MIN_VALUE;
+        for (i = 0; i < arr_size; i++) {
+            //for (int k = 0; k<arr_size; k++)
+            if (arr[i] > first) {
+                third = second;
+                second = first;
+                first = arr[i];
+                //name=names[k];
+            }
+
+            else if (arr[i] > second) {
+                third = second;
+                second = arr[i];
+                //name=names[k];
+            }
+            else if (arr[i] > third)
+                third = arr[i];
+
+        }
+
+        System.out.println("First topper " + name+"and score is "+first);
+        System.out.println("Second topper "+name+"and score is "+second);
+         System.out.println("third topper "+name+"and score is "+third);
+            }
+
+            public static void main(String[] args)
+            {
+                int arr[] = { 12, 13, 1, 10, 34 };
+                String names[]=new String[]{"Muneera","aditi","niki","shreya","jitu"};
+                int n = arr.length;
+                ShowTopperNames(arr, n,names);
+            }
+        }

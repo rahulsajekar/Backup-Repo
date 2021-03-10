@@ -1,0 +1,98 @@
+import java.util.Scanner;
+
+
+public class Commerce_yes_no_questions {
+
+    public static void main(String[] args) {
+
+        String answer1;
+
+        String answer2;
+
+        String answer3;
+
+        String answer4;
+
+        Scanner q1=new Scanner(System.in);
+
+        System.out.println("Career Guidance for Commerce Students");
+
+        System.out.println("After Graduation preparing for CA?    Enter Yes or No:  ");
+
+             answer1= q1.nextLine();
+
+        //System.out.println(answer1);
+
+        if (answer1.equals("Yes"))
+
+        {
+
+            System.out.println("Preparing for CA");
+
+        }
+
+        else{
+
+            System.out.println("Not preparing for CA");
+
+        }
+
+       System.out.println("After Graduation applying for Government jobs?");
+
+        answer2= q1.nextLine();
+
+        if (answer2.equals("Yes"))
+
+        {
+
+            System.out.println("Applying for Government jobs");
+
+        }
+
+        else{
+
+            System.out.println("Not applying for Government jobs");
+
+        }
+
+        System.out.println("After Graduation applying for Bank exams?");
+
+        answer3= q1.nextLine();
+
+        if (answer3.equals("Yes"))
+
+        {
+
+            System.out.println("Applying for Bank exams");
+
+        }
+
+        else{
+
+            System.out.println("Not applying for Bank exams");
+
+        }
+
+        System.out.println("After Graduation interested in MCOM?");
+
+        answer4= q1.nextLine();
+
+        if (answer4.equals("Yes"))
+
+        {
+
+            System.out.println("Opting for MCOM");
+
+        }
+
+        else{
+
+            System.out.println("Not interested in MCOM");
+
+        }
+
+        System.out.println();
+
+    }
+
+}

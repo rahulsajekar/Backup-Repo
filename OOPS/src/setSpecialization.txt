@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class Commerce_function {
+    void set_Specialization() {
+        Integer Specialization;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("                                     WELCOME TO SPECIALIZATION SECTION");
+        System.out.println("Some courses are provided for Specialization, Select anyone course in which you want to do Specialization");
+        System.out.println("1.Financial Accounting\n" +
+
+                "2.Business Organization and Management\n" +
+
+                "3.Generic elective courses like Macro-economics, Foreign exchange markets, etc.\n" +
+
+                "4.Company Law\n" +
+
+                "5.Indirect Tax Laws\n" +
+
+                "6.Auditing and Corporate Governance\n" +
+
+                "7.Fundamentals of Financial Management\n" +
+
+                "8.Investment Management\n"
+        );
+        System.out.println("Choose by entering value from range of [1-8]");
+        Specialization = sc.nextInt();
+        switch (Specialization) {
+            case 1:
+                System.out.println("1.Financial Accounting");
+                break;
+            case 2:
+                System.out.println("\n2.Business Organization and Management");
+                break;
+            case 3:
+                System.out.println("\n\"3.Generic elective courses like Macro-economics, Foreign exchange markets, etc.");
+
+                break;
+            case 4:
+                System.out.println("\n4.Company Law");
+                break;
+
+            case 5:
+                System.out.println("5.Indirect Tax Laws");
+                break;
+
+            case 6:
+                System.out.println("\n6.Auditing and Corporate Governance");
+                break;
+
+            case 7:
+                System.out.println("\n7.Fundamentals of Financial Management");
+                break;
+            case 8:
+                System.out.println("\n8.Investment Management");
+                break;
+                default:
+                System.out.println("\nOops you've chosen Wrong Option \nPlease choose correct option");
+                return;
+
+
+
+        }
+        System.out.println("Great you have Selected most trending topic for Specialization");
+        //System.out.println("something");
+    }
+    public static void main(String[] args) {
+        Commerce_function specialization=new Commerce_function();
+        specialization.set_Specialization();
+
+
+
+
+    }
+}

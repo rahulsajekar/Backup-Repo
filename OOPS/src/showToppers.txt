@@ -1,0 +1,23 @@
+showToppers(CommerceStudent[] cs){
+
+ CommerceStudent first = cs[0];
+ CommerceStudent second = cs[1];
+ CommerceStudent third = cs[2];
+
+     for(CommerceStudent c : cs){
+        if(c.getPercentage() > first.getPercentage()){
+            third = second;
+            second = first;
+            first = c;
+        }
+        else if(c.getPercentage() > second.getPercentage()){
+            third = second;
+             second = c;
+        }
+        else{
+            third = c;
+        }
+
+     }
+
+}
