@@ -1,0 +1,9 @@
+1) ctrl + F : find ,  F3->Next Find,  Shift+F -> Previous Find
+2) Alt + Enter : Suggestions
+3) Alt + 1 : Control goes to Project view
+4) ctrl + e : Recent files used
+5) ctrl + shift + F10 : Run the code
+6) ctrl + F5 : Rerun
+7) ctrl + B : go to variable declaration line (select variable first and then press)
+8) Alt + F7 : shows usage of variable
+9) ctrl + ctrl : run anything
